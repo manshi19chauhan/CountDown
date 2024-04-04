@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="enterdate">
+        <input type="text" class="date" pattern="\d{2}-\d{2}-\d{4}" placeholder="MM-DD-YYYY">
+        <button class="start" onclick="activate()">start</button>    
+    </div>
+    <div class="until" id="mycountdown">
+        <div class="until_component">
+            <div class="until_numeric until_numeric_months">00</div>
+            <div class="until_unit">MONTHS</div>
+        </div>
+        <div class="until_component">
+            <div class="until_numeric until_numeric_days">00</div>
+            <div class="until_unit">DAYS</div>
+        </div>
+        <div class="until_component">
+            <div class="until_numeric until_numeric_hours">00</div>
+            <div class="until_unit">HOURS</div>
+        </div>
+        <div class="until_component">
+            <div class="until_numeric until_numeric_minutes">00</div>
+            <div class="until_unit">MINUTES</div>
+        </div>
+        <div class="until_component">
+            <div class="until_numeric until_numeric_seconds">00</div>
+            <div class="until_unit">SECONDS</div>
+        </div>
+        <div class="until_event"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.10/dayjs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.10/plugin/duration.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
